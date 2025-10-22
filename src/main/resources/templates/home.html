@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="it">
+<head th:replace="fragments/header :: head">
+</head>
+<body>
+
+    <div th:replace="fragments/header :: header"></div>
+
+    <main class="container my-5">
+        <h1 class="mb-4 text-center">Benvenuto nella Home!</h1>
+        <p class="lead text-center">Questo è il contenuto principale della tua applicazione.</p>
+        <a th:href="@{/campaigns}">Vai alle Campagne</a>
+    </main>
+
+    <div th:replace="fragments/footer :: footer"></div>
+
+</body>
+</html>
+
+<style>
+    html, body {
+        background-color: whitesmoke;
+    }
+</style>
