@@ -14,29 +14,16 @@ public class CampaignModel {
     @Column(name = "name", nullable = false, length = 50)
     private String name;
 
-    @Column(name = "description")
-    private String description;
-
-    @Column(name = "start_date")
-    private LocalDate startDate;
-
-    @Column(name = "end_date")
-    private LocalDate endDate;
-
     public CampaignModel() {}
 
      public CampaignModel(String name, String description, LocalDate startDate, LocalDate endDate) {
         this.name = name;
-        this.description = description;
-        this.startDate = startDate;
-        this.endDate = endDate;
     }
 
     // Getter e Setter
     public Integer getId() {
         return id;
     }
-
     public void setId(Integer id) {
         this.id = id;
     }
@@ -44,32 +31,7 @@ public class CampaignModel {
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public LocalDate getStartDate() {
-        return startDate;
-    }
-
-    public void setStartDate(LocalDate startDate) {
-        this.startDate = startDate;
-    }
-
-    public LocalDate getEndDate() {
-        return endDate;
-    }
-
-    public void setEndDate(LocalDate endDate) {
-        this.endDate = endDate;
     }
 }
